@@ -28,4 +28,17 @@ public class Table
             System.out.println("Gia tri cua cell " + Float.parseFloat(cellValue.replace("$","")));
         }
     }
+
+    public static void printCellValue  (WebDriver driver, String tableLocator){
+        int totalColumn = driver.findElements(By.xpath(tableLocator + "/thead/tr/th")).size();
+        int totalRow = driver.findElements(By.xpath(tableLocator + "/tbody/tr")).size();
+
+        String cellLocator = tableLocator + "/tbody/tr[%d]/td[%d]";
+        for (int row = 1; row <= totalRow ; row ++) {
+            for (int column = 1; column <= totalColumn; column++) {
+                String cellValue = driver.findElement(By.xpath(String.format(cellLocator, row, column))).getText();
+                System.out.println("Gia tri cua cell " + cellValue);
+            }
+        }
+    }
 }
