@@ -1,4 +1,4 @@
-package FindElement;
+package modules.FindElement;
 
 
 import org.openqa.selenium.By;
