@@ -1,0 +1,7 @@
+<suite name="Caculator regression">
+    <test name = "Metric Unit">
+        <classes>
+            <class name="modules.FindElement.CaculatorTest"/>
+        </classes>
+    </test>
+</suite>

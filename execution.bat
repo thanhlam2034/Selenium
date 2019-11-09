@@ -1,0 +1,1 @@
+mvn surefire:test -Dtest_suite=caculator-testplan.xml

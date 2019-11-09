@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Caculator regression]">
+  <test thread-count="5" verbose="0" name="Metric Unit(failed)">
+    <classes>
+      <class name="modules.FindElement.CaculatorTest">
+        <methods>
+          <include name="goToMetricUnit"/>
+          <include name="CalulatorTest" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- modules.FindElement.CaculatorTest -->
+    </classes>
+  </test> <!-- Metric Unit(failed) -->
+</suite> <!-- Failed suite [Caculator regression] -->
